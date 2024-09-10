@@ -1,0 +1,14 @@
+/* тестовое поле */
+.text-field {
+  padding: 11px 16px 11px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition:  border-color var(--transition-duration);
+  outline: none;
+}
+.text-field::placeholder {
+  color: var(--placeholder-color);
+}
+.text-field:focus {
+  border-color: var(--base-color);
+}

@@ -8,15 +8,6 @@
   padding: 13px 20px;
   transition: background-color .3s;
 }
-.defolt-btn {
-  padding: 11px 47px;
-  color: var(--black-color);
-  background-repeat: 12px;
-  background-color: var(--base-color);
-  outline: 1px solid var(--base-color);
-} outline-offset: 3px;
-
-
 .btn:hover {
   background-color: #66ec36;
 }
@@ -33,4 +24,35 @@
 /* Модификатор желтого цвета */
 .btn_yellow {
   background-color: #FFB800;
+}
+/* другая кнопка */
+.defolt-btn {
+  border: none;
+  outline: none;
+  padding: 11px 47px;
+  color: var(--black-color);
+  border-radius: 12px;
+  background-color: var(--base-color);
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  transition:  outline-color var(--transition-duration), background-color var(--transition-duration);
+  cursor: pointer;
+} 
+
+.defolt-btn:focus-visible {
+
+  outline-color:  var(--base-color);
+}
+.defolt-btn:focus {
+  outline: none;
+}
+.defolt-btn:hover {
+  background-color: var(--base-color-hover);
+}
+.defolt-btn:active {
+  background-color: var(--base-color-active);
+}
+/* для ссылки */
+.defolt-btn_link {
+  display: inline-block;
 }

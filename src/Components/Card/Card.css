@@ -64,3 +64,6 @@
   color: white;
   font-weight: 700;
 }
+.card__btn {
+  width: 100%;
+}
