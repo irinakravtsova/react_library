@@ -1,0 +1,21 @@
+/* Рейтинг */
+.rating {
+  display: flex;
+}
+
+.rating__star:not(:last-child) {
+ margin-right: 5px; 
+}
+
+/* Модификаторы размеров */
+.rating__star_size_s {
+  transform: scale(1.1);
+}
+
+.rating__star_size_m {
+  transform: scale(1.2);
+}
+
+.rating__star_size_l {
+  transform: scale(1.3);
+}

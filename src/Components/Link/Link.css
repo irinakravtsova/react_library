@@ -1,0 +1,17 @@
+.default-link {
+  font-size: 20px;
+  text-decoration: underline;
+  color: var(--black-color);
+  transition: color var(--transition-duration)  ;
+}
+/* при нажатии на таб */
+.default-link:focus-visible {
+  outline: none;
+  background-color: var(--base-color);
+}
+.default-link:hover {
+  color: var(--base-color-active);
+}
+.default-link:active {
+  color: var(--base-color-hover);
+}

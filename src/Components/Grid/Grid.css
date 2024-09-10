@@ -1,0 +1,12 @@
+/* Сетка карточек */
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cards-list__item {
+}

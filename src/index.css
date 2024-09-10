@@ -1,0 +1,39 @@
+:root {
+  --black-color: #263238;
+  --base-color: #baef00;
+  --base-color-hover: #D9FF56;
+  --base-color-active: #a3d200;
+  --border-color: #e3e3e3;
+  --placeholder-color: #8d8d8d;
+  --transition-duration: .3s;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a { 
+  text-decoration: none;
+}
+
+body { 
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: var(--black-color);
+}
+img {
+  width: 100%;
+}
+
+@media (max-width: 740px) {
+ 
+
+}

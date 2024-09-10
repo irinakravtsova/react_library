@@ -1,0 +1,36 @@
+/* Кнопка */
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #3BCA09;
+  color: white;
+  padding: 13px 20px;
+  transition: background-color .3s;
+}
+.defolt-btn {
+  padding: 11px 47px;
+  color: var(--black-color);
+  background-repeat: 12px;
+  background-color: var(--base-color);
+  outline: 1px solid var(--base-color);
+} outline-offset: 3px;
+
+
+.btn:hover {
+  background-color: #66ec36;
+}
+
+.btn:active {
+  background-color: #2fa803;
+}
+
+.btn:focus {
+  outline: 1px solid #3BCA09;
+  outline-offset: 3px;
+}
+
+/* Модификатор желтого цвета */
+.btn_yellow {
+  background-color: #FFB800;
+}
