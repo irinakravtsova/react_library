@@ -17,7 +17,9 @@ function Form() {
 
         < Button 
         type = 'submit'
-        cls = 'callback-form__btn'/>
+        clsForm = 'callback-form__btn'
+        btn = 'formBtn'
+        textForm = 'Отправить'/>
       </form> 
     
    

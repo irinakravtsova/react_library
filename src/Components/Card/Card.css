@@ -1,18 +1,36 @@
 /* Карточка */
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 15px;
-  overflow: hidden;
+  /* overflow: hidden;  это свойство ограничивает пределами карточки, уже ничего нельзя будет вынести за пределы*/
+  border: 1px solid var(--border-color);
+
 }
 
 .card__img {
   display: block;
   width: 100%;
   height: 217px;
-  object-fit: cover;
+  /* картинка вписывается в карточку и ей делаем закругления бордера */
+  object-fit: cover; 
+  /* чтобы изображение не сжималось: */
+  flex-shrink: 0;
+ border-top-right-radius: 13px;
+ border-top-left-radius: 13px;
+
 }
 .card__body {
-  padding: 43px 36px;
+  padding: 15px;
+  display: flex;
+  /* чтобы высота карточек не зависила от строчек текста */
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+.card__body-top {
+  margin-bottom: 22px;
 }
 
 .card__price-rating {
@@ -22,8 +40,9 @@
 }
 
 .card__price {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  color: var( --price-color);
 }
 
 .card__rating{
@@ -32,9 +51,9 @@
 
 .card__title {
   margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .card__location {
@@ -64,6 +83,61 @@
   color: white;
   font-weight: 700;
 }
+/* кнопка на всю ширину */
 .card__btn {
   width: 100%;
+}
+/* модификатор - изображение на всю карточку */
+.card_big {
+  position: relative;
+  border: none;
+}
+.card__img_big {
+  height: 100%;
+  border-radius: 12px;
+}
+.card__body_big {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 12px;
+  color: white;
+  align-items: flex-start;
+}
+.card__price_big {
+  color: white;
+}
+.card__btn-big {
+  width: initial;
+  padding: 11px 47px;
+}
+
+@media (max-width: 740px) {     
+  .card__img {
+    height: 90px;
+  }
+  .card__body {
+    padding: 10px;
+ 
+  }
+  .card__body-top {
+    margin-bottom: 22px;
+  }
+  .card__title {  
+    font-size: 14px;  
+  } 
+ 
+  .card__price {
+    font-size: 14px;  
+  } 
+  
+  .card__img_big {
+    height: 100%; 
+  }
+  .card__btn-big {
+    width: 100%;    
+  }
+
+
 }

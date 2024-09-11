@@ -6,6 +6,10 @@
 .callback-form__inp {
   flex-basis: 288px;
 }
+.callback-form__btn {
+  padding: 11px 47px;
+}
+
 
 @media (max-width: 740px) {
   .callback-form {
@@ -13,6 +17,9 @@
   }
   .callback-form__inp {
   flex-basis: initial;
+  }
+  .callback-form__btn {
+    padding: 11px;
   }
 
 }

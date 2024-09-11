@@ -1,14 +1,14 @@
-
+import classNames from 'classnames';
 import './Menu.css'
 
 
-function Menu() {
+function Menu(props) {
   return (
     
     <nav
-      className='menu'
+      className= {classNames("menu", props.cls)} 
     >
-      <ul className='menu__list'>
+      <ul className= {classNames('menu__list', props.clsList)} >
         <li className='menu__item'>
           <a className='menu__link'
             href="">

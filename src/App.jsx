@@ -12,10 +12,17 @@ import Logo from './Components/Logo/Logo'
 import Menu from './Components/Menu/Menu'
 import Form from './Components/Form/Form'
 import Card from './Components/Card/Card'
+import Header from './Components/Header/Header.jsx'
+import Main from './Components/Main/Main.jsx'
 
 function App() {
   return (
-   <div className="container">
+    <>
+     < Header /> 
+     <Main />
+
+    <div className="container">  
+  
     <Link />
     <Button/>
     < Input />
@@ -26,7 +33,7 @@ function App() {
     < Card />
 
    </div>
-    
+   </>  
    
   )
 }

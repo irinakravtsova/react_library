@@ -1,0 +1,7 @@
+/* заголовок 2 уровня */
+.subtitle {
+  margin: 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}

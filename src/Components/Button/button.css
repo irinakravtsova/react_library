@@ -56,3 +56,7 @@
 .defolt-btn_link {
   display: inline-block;
 }
+
+@media (max-width: 740px) {  
+
+   }

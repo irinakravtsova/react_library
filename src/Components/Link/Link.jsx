@@ -1,14 +1,14 @@
 
 import './Link.css'
 
-function Link() {
+function Link(props) {
 
 
   return (
    <a 
       href=""
       className='default-link'
-      >Ссылка</a>
+      >{props.text}</a>
   )
 }
 

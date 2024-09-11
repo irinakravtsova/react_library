@@ -1,8 +1,8 @@
-
+import classNames from 'classnames';
 import './Logo.css'
 import logo from '../../assets/logo.png'
 
-function Logo() {
+function Logo(props) {
 
 
   return (
@@ -10,7 +10,7 @@ function Logo() {
       <img 
       src={logo} 
       alt="logo" 
-      className='logo'
+      className= {classNames('logo', props.cls)}
       width='154'/>
     </>
 

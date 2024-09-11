@@ -9,7 +9,7 @@
   
 }
 .menu__link {
-  color: var(--black-color);
+  color: white;
   outline: none;
   transition:  color var(--transition-duration);
 }
