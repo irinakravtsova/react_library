@@ -1,0 +1,40 @@
+.footer {
+  padding: 23px 15px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--border-color);
+}
+
+.footer__logo {
+  opacity: .5;
+}
+.header__logo:focus-visible {
+  opacity: .8 ;
+}
+.header__logo:hover {
+  background-color: var(--base-color-hover);
+  border-radius: 50%; 
+}
+.header__logo:active {
+  background-color: var(--base-color-active);
+  border-radius: 50%; 
+}
+
+
+
+@media (max-width: 740px) {  
+
+  .header__logo {
+    display: flex;
+    justify-content: center;  
+  }
+  .header__menu {
+    padding: 20px 0;
+    width: 100%;
+    overflow: scroll;
+  }
+  .header__menu-list {    
+    width: fit-content;
+  }
+
+   }

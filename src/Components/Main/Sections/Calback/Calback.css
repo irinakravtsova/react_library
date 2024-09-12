@@ -1,0 +1,39 @@
+.calback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.calback::before {
+  content: '';
+  display: block;
+  background-image: url(/src/assets/Component.jpg);
+  background-size:contain ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.calback__right {
+  padding: 72px 50px;
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.5018382352941176) 0%, rgba(0,0,0,0.5) 35%); ;
+}
+.calback__desc {
+  margin-top: 0;
+  margin-bottom: 26px;
+  max-width: 424px;
+  font-size: 20px;
+ 
+}
+
+@media (max-width: 740px) {
+  .calback {
+    display: block
+   
+  } 
+  .calback::before {
+       display: none; 
+  }
+  .calback__right {
+    padding-left: 15px;
+    padding-right: 15px;
+      }
+
+}
+

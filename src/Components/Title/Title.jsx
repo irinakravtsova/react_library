@@ -1,14 +1,14 @@
-
+import classNames from 'classnames';
 import './Title.css'
 
-function Title2() {
+function Title2(props) {
 
 
   return (
     <>
  <h2
-    className='subtitle'
-    >Подзаголовок</h2>
+    className= {classNames('subtitle', props.cls)}
+    >{props.text}</h2>
     </>
 
   )

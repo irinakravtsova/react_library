@@ -116,6 +116,7 @@
 @media (max-width: 740px) {     
   .card__img {
     height: 90px;
+    object-fit: cover;
   }
   .card__body {
     padding: 10px;

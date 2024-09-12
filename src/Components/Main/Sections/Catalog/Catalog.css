@@ -1,0 +1,30 @@
+.catalog {
+  padding: 80px 0;
+}
+.catalog__title {
+  margin-bottom: 60px;
+}
+.catalog__list {
+  grid-template-columns: repeat(4, 1fr);
+}
+.catalog__item-big {
+  grid-column: span 2;
+}
+.catalog__card {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  .catalog {
+    padding: 40px 0;
+  }
+  .catalog__title {
+    margin-bottom: 30px;
+  }
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+}
+

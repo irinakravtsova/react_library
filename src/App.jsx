@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import Grid from './Components/Grid/Gid'
+import Grid from './Components/Grid/Grid'
 import Link from './Components/Link/Link'
 import Button from './Components/Button/button'
 import Input from './Components/Input/Input'
@@ -14,13 +14,15 @@ import Form from './Components/Form/Form'
 import Card from './Components/Card/Card'
 import Header from './Components/Header/Header.jsx'
 import Main from './Components/Main/Main.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 function App() {
   return (
     <>
      < Header /> 
-     <Main />
-
+     < Main />
+     < Footer />
+{/* 
     <div className="container">  
   
     <Link />
@@ -32,7 +34,7 @@ function App() {
     < Form />
     < Card />
 
-   </div>
+   </div> */}
    </>  
    
   )
