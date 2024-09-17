@@ -1,0 +1,42 @@
+.flexcard {
+  background-color: rgb(217, 213, 213);
+}
+
+.flexcard__grid {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  
+}
+.flexcard__item {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+  width: 33.3333%;
+}
+.flexcard__card-1 {
+  padding: 20px;
+  background-color: white;
+
+}
+.fixcard__card-title {
+  margin: 0;
+}
+.flexcard__desc {
+ margin-bottom: 0;
+}
+.flexcard__card-2 {
+
+}
+
+
+@media (max-width: 740px) {     
+
+
+
+}

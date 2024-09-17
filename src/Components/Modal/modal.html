@@ -1,0 +1,143 @@
+<div class="modal3" id="my-modal3">
+    <div class="modal__box3">
+      <button class="modal3__close-btn">
+        <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+            fill="#333333" />
+          <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+        </svg>
+      </button>
+      <h2 class="popup__tittle">Политика конфидециальности</h2>
+      <p class="private__desr">
+        Соблюдение Вашей конфиденциальности важно для нас. По этой причине, мы разработали Политику Конфиденциальности,
+        которая описывает, как мы используем и храним Вашу информацию. Пожалуйста, ознакомьтесь с нашими правилами
+        соблюдения конфиденциальности и сообщите нам, если у вас возникнут какие-либо вопросы.
+      </p>
+      <h3 class="popup__subtitle">Сбор и использование персональной информации</h3>
+      <p class="private__desr">
+        Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного
+        лица либо связи с ним.
+        От вас может быть запрошено предоставление вашей персональной информации в любой момент, когда вы связываетесь с
+        нами.
+        Ниже приведены некоторые примеры типов персональной информации, которую мы можем собирать, и как мы можем
+        использовать такую информацию.
+
+      </p>
+      <h3 class="popup__subtitle">Какую персональную информацию мы собираем и как мы используем :</h3>
+      <ul class="private__list">
+        <li class="private__item">
+          Когда вы оставляете заявку на сайте, мы можем собирать различную информацию, включая ваши имя, номер телефона,
+          адрес электронной почты и т.д.
+        </li>
+        <li class="private__item">
+          Собираемая нами персональная информация позволяет нам связываться с вами и сообщать об уникальных
+          предложениях, акциях и других мероприятиях и ближайших событиях.
+        </li>
+        <li class="private__item">
+          Время от времени, мы можем использовать вашу персональную информацию для отправки важных уведомлений и
+          сообщений.
+        </li>
+        <li class="private__item">
+          Мы также можем использовать персональную информацию для внутренних целей, таких как проведения аудита, анализа
+          данных и различных исследований в целях улучшения услуг предоставляемых нами и предоставления Вам рекомендаций
+          относительно наших услуг.
+        </li>
+        <li class="private__item">
+          Если вы принимаете участие в розыгрыше призов, конкурсе или сходном стимулирующем мероприятии, мы можем
+          использовать предоставляемую вами информацию для управления такими программами.
+        </li>
+      </ul>
+      <h3 class="popup__subtitle">Раскрытие информации третьим лицам</h3>
+      <p class="private__desr">
+        Мы не раскрываем полученную от Вас информацию третьим лицам.
+      </p>
+      <h3 class="popup__subtitle">Исключения:</h3>
+      <p class="private__desr">
+        В случае если необходимо — в соответствии с законом, судебным порядком, в судебном разбирательстве, и/или на
+        основании публичных запросов или запросов от государственных органов на территории РФ — раскрыть вашу
+        персональную информацию. Мы также можем раскрывать информацию о вас если мы определим, что такое раскрытие
+        необходимо или уместно в целях безопасности, поддержания правопорядка, или иных общественно важных случаях.
+      </p>
+      <p class="private__desr">
+        В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию
+        соответствующему третьему лицу – правопреемнику.
+      </p>
+      <h3 class="popup__subtitle">Защита персональной информации</h3>
+      <p class="private__desr">
+        Мы предпринимаем меры предосторожности — включая административные, технические и физические — для защиты вашей // popup open
+        const buttonElems = document.querySelectorAll('.btn__popup');
+        const btnPrivate = document.querySelectorAll('.privacyPolicyLink');
+        const modalElem = document.querySelector('.modal');
+        
+        const openModal = (modalSelector, modalBoxSelector, event) => {
+          if (event) event.preventDefault();
+        
+          const modalElem = document.querySelector(modalSelector);
+          const modalBoxElem = document.querySelector(modalBoxSelector);
+        
+          modalElem.classList.add('active');
+          if (modalBoxElem) {
+            modalBoxElem.classList.add('modal__box-active1');
+          }
+        
+          document.body.style.overflow = 'hidden';
+          document.body.style.paddingRight = scrollbarWidth + 'px';
+        };
+        
+        buttonElems.forEach(button => {
+          button.addEventListener('click', (event) => openModal('.modal', null, event));
+        });
+        
+        btnPrivate.forEach(button => {
+          button.addEventListener('click', (event) => openModal('.modal3', '.modal__box3', event));
+        });
+        
+        
+        // popupclose
+        document.addEventListener('DOMContentLoaded', () => {
+          const closeModal = (modalSelector, closeBtnSelector, modalBoxSelector) => {
+            const modalElem = document.querySelector(modalSelector);
+            const modalBoxElem = modalBoxSelector ? document.querySelector(modalBoxSelector) : null;
+        
+            if (!modalElem) return; // Если модальное окно не найдено, выход из функции
+        
+            // Закрытие по кнопке закрытия
+            const closeBtn = modalElem.querySelector(closeBtnSelector);
+            if (closeBtn && typeof closeBtn.addEventListener === 'function') {
+              closeBtn.addEventListener("click", () => {
+                modalElem.classList.remove("active");
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+              });
+            }
+        
+            // Закрытие по клавише Esc
+            window.addEventListener('keydown', (e) => {
+              if (e.key === "Escape") {
+                modalElem.classList.remove("active");
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+              }
+            });
+        
+            // Закрытие по клику вне модального окна
+            if (modalBoxElem) {
+              modalElem.addEventListener('click', event => {
+                // Если клик был внутри modalBoxElem, то выходим из функции
+                if (modalBoxElem.contains(event.target)) {
+                  return;
+                }
+                modalElem.classList.remove('active');
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = '';
+              });
+            }
+          };
+        
+          // Применение для первого модального окна
+          closeModal("#my-modal", "#close-my-modal-btn", "#my-modal .modal__box");
+        
+          // Применение для второго модального окна
+          closeModal(".modal3", ".modal3__close-btn", ".modal3 .modal__box3");
+        });
+        // Применение для модальных окон

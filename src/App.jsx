@@ -15,13 +15,20 @@ import Card from './Components/Card/Card'
 import Header from './Components/Header/Header.jsx'
 import Main from './Components/Main/Main.jsx'
 import Footer from './Components/Footer/Footer.jsx'
+import PseudoElement from './components/pseudoElement/pseudoElement.jsx'
+import FlexPosition from './components/FlexPosition/FlexPosition.jsx'
+import FlexCard from './components/FlexCard/FlexCard.jsx'
 
 function App() {
   return (
     <>
-     < Header /> 
+    < FlexCard />
+    {/* < FlexPosition /> */}
+    {/* < PseudoElement /> */}
+   
+     {/* < Header /> 
      < Main />
-     < Footer />
+     < Footer /> */}
 {/* 
     <div className="container">  
   

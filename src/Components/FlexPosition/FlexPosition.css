@@ -1,0 +1,46 @@
+.wrap {
+  display: flex;
+
+}
+.left {
+  margin-right: 15px;
+  flex-basis: 50%;
+  
+}
+.right {  
+  margin-left: 15px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+.flexposition__card {
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  background-color: gray;
+  color: white;
+}
+.flexposition__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.flexposition__text {
+  margin: 0;
+}
+.flexposition__card-right-top {
+  flex-basis: 50%;
+  margin-bottom: 30px;
+}
+.flexposition__card-right-bottom {
+ flex-basis: 50%;
+}
+.flexposition__card-left {
+
+  min-height: 100%;
+
+}
+
+@media (max-width: 740px) {  
+
+   }

@@ -1,0 +1,28 @@
+.logo__title {
+  /* font-family: Playfair Display; */
+ font-size: 24px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ letter-spacing: 1.5px;
+ color: #331B3B;
+}
+
+
+@media (max-width: 961px) {
+  .logo__title {
+ position: absolute;
+ top: 20px;
+ left: 0;
+  }
+  
+}
+
+@media (max-width: 541px) {
+  .logo__title {
+  
+    top: 10px;
+ 
+     }
+ 
+}

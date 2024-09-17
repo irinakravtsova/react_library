@@ -1,0 +1,54 @@
+.icon-button {
+  /* position: absolute; */
+  top: 200px;
+  transform: translateY(-50%);
+
+ background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+
+  cursor: pointer;
+}
+
+.icon-button.left,
+.icon-button.left.disable {
+  left: 0;
+  background: url('../../../assets/controller-previev.svg') center / 100% 100% no-repeat;
+}
+.icon-button.left:hover {
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #dfdce0;
+  padding: 6px 10px 6px 10px;
+  
+}
+.icon-button.right,
+.icon-button.right.disable {
+  right: 0;
+  background: url('../../../assets/controller-next.svg') center / 100% 100% no-repeat;
+}
+.icon-button.right:hover {
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #dfdce0;
+  padding: 6px 10px 6px 10px;
+}
+.icon-button.left.disable,
+.icon-button.right.disable {
+  pointer-events: none;
+  opacity: 0.36;
+}
+
+@media (max-width: 541px) {
+  .icon-button {
+
+    width: 35px;
+    height: 35px;
+   
+  }
+}

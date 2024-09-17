@@ -1,0 +1,26 @@
+.header__contact {
+  display: flex;
+  gap: 20px;
+}
+.contact-active {
+  transition: transform .5s;
+  outline: 1px solid transparent;
+}
+.contact-active:hover {
+  transform: scale(1.2);
+  /* background-image: url(../../assets/Ellipse-active.svg);
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+.contact-active:active {
+  transform: scale(0,97);
+}
+.contact-active:focus {
+  outline-color: #331B3B;
+}
+@media (max-width: 961px) {
+  .header__contact {
+    display: none;
+  }
+  
+}

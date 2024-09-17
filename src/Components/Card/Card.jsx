@@ -8,11 +8,11 @@ function Card(props) {
   if (props.cardDefolt ==='cardDefolt') {
     return (
       <article className= {classNames("card  cards-list__item", props.clsCardArticl)}>
-      <img className="card__img " src={FotoCard} alt="Bon restaurant"/>
-      <div className="card__body ">
-        <div className="card__body-top">
-          <h3 className="card__title">Bon restaurant</h3>
-            <strong class="card__price  ">5 000 руб</strong>
+        <img className="card__img " src={FotoCard} alt="Bon restaurant"/>
+        <div className="card__body ">
+          <div className="card__body-top">
+            <h3 className="card__title">Bon restaurant</h3>
+              <strong class="card__price  ">5 000 руб</strong>
             {/* < Rating /> */}
         
         </div>
