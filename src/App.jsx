@@ -18,11 +18,13 @@ import Footer from './Components/Footer/Footer.jsx'
 import PseudoElement from './components/pseudoElement/pseudoElement.jsx'
 import FlexPosition from './components/FlexPosition/FlexPosition.jsx'
 import FlexCard from './components/FlexCard/FlexCard.jsx'
+import ModuleCard from './components/ModuleCard/ModuleCard.jsx'
 
 function App() {
   return (
     <>
-    < FlexCard />
+    < ModuleCard/>
+    {/* < FlexCard /> */}
     {/* < FlexPosition /> */}
     {/* < PseudoElement /> */}
    
