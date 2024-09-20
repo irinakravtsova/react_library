@@ -25,7 +25,7 @@ function FlexCard(props) {
             <div className="flexcard__card-2-body">
                <h2 className='fixcard__card-title'>Карточка 2</h2>
               <p className="flexcard__desc-card-2">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
+               Фоновое изображение <br></br>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
               </p>
             </div>              
           </div>
@@ -39,7 +39,7 @@ function FlexCard(props) {
             <div className="flexcard__card-3-body">
                <h2 className='fixcard__card-title'>Карточка 3</h2>
               <p className="flexcard__desc-card-3">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
+               добавлена картинка <br></br>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
               </p>
             </div>              
           </div>
@@ -48,18 +48,63 @@ function FlexCard(props) {
 
         <li className="flexcard__item">
           <div className="flexcard__card-4">
-            <div className="flexcard__card-4-top">
+            <div className="flexcard__card-4-prew">
                <img className='flexcard__card-4-img' src={FotoCard} alt="" /> 
             </div>
-            <div className="flexcard__card-4-battom">
-               <h2 className='fixcard__card-title'>Карточка 3</h2>
+          
+            <div className="flexcard__card-4-body">
+            <div className="flexcard__card-4-top">
+              <h2 className='fixcard__card-title'>Карточка 4</h2>
               <p className="flexcard__desc-card-4">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
+               Добавление блока даты.<br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
               </p>
-            </div>              
-          </div>
+            </div>
            
-              </li>
+              <div className="flexcard__card-4-battom">
+                <span className='flexcard__card-4-data'>
+                 19.09.2024 </span>
+              </div> 
+             </div>                       
+          </div>
+        </li>
+
+        <li className="flexcard__item">
+          <div className="flexcard__card-4">
+          <div className="flexcard__card-4-prew">
+               <img className='flexcard__card-4-img' src={FotoCard} alt="" /> 
+            </div>
+            <div className="flexcard__card-4-body">
+              <div className="flexcard__card-4-top">
+                <h2 className='fixcard__card-title'>Карточка 4</h2>
+                <p className="flexcard__desc-card-4">
+                  Выравнивание высоты карточек вне зависимости от количества контента.<br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
+                </p>
+              </div> 
+        
+              <div className="flexcard__card-4-battom">
+                <span className='flexcard__card-4-data'>
+                 19.09.2024 </span>
+              </div> 
+             </div>                       
+          </div>
+        </li>
+
+        
+        <li className="flexcard__item">
+          <div className="flexcard__card-5">
+         
+            <div className="flexcard__card-5-body">
+             
+                <h2 className='fixcard__card-title'>Карточка 5</h2>
+                <p className="flexcard__desc-card-5">
+                  Текст поверх фоновой картинки<br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum optio quam nihil autem.
+                </p>
+                
+             
+             </div>                       
+          </div>
+        </li>
+
           <li className="flexcard__item">Текст3</li>
           <li className="flexcard__item">Текст4</li>
         </ul>
