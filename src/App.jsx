@@ -25,15 +25,15 @@ import AdaptivText from './components/AdaptivText/AdaptivText.jsx'
 function App() {
   return (
     <>
-    < AdaptivText />
+    {/* < AdaptivText /> */}
     {/* < SliderFromII /> */}
     {/* < ModuleCard/> */}
     {/* < FlexCard /> */}
     {/* < FlexPosition /> */}
     {/* < PseudoElement /> */}
    
-     {/* < Header /> 
-     < Main />
+     < Header /> 
+     {/* < Main />
      < Footer /> */}
 {/* 
     <div className="container">  

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5;
+  font-family: sans-serif
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {  
+  /* для удобства пользования единицами rem (меняем величину тут и меняется во всем сайте) */
+ font-size: 62.5%;
+ /* чтобы не вылезали за пределы */
+ overflow-x: hidden;
+}
+body {
+  /* чтобы body занял всю высоту области просмотра */
+  min-height: 100vh;
+  /* чтобы был более плавный переход скрола */
+  scroll-behavior: smooth;
+}
+img, video, picture, canvas, svg {
+/* чтобы большое изображение не выходило за пределы   */
+  max-width: 100%;
+  /* для выравниваний этих элементов */
+  display: block;
+}
+input, button, textarea, select {
+  /* наследование шрифтов */
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  /* чтобы длинные слова или ссылки не выходили за пределы, разрешить перенос строк   */
+  overflow-wrap: break-word;
+}

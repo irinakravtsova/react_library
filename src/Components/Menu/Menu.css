@@ -1,17 +1,33 @@
 /* меню */
-.menu__list {
+.menu ul {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding-left: 0;
   
 }
-.menu__link {
+.menu ul li a {
+  font-size: var(--small-fz);
   color: white;
-  outline: none;
+  position: relative;
+ text-transform: capitalize;
   transition:  color var(--transition-duration);
+}
+.menu ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--base-color-hover);
+  transition: 0.3s linear;
+}
+.menu ul li a:hover:before {
+  left: 0;
+  width: 100%;
 }
 .menu__link:focus-visible {
   outline: none;
