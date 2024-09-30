@@ -19,11 +19,15 @@ import PseudoElement from './components/pseudoElement/pseudoElement.jsx'
 import FlexPosition from './components/FlexPosition/FlexPosition.jsx'
 import FlexCard from './components/FlexCard/FlexCard.jsx'
 import ModuleCard from './components/ModuleCard/ModuleCard.jsx'
+import SliderFromII from './components/SliderFromII/SliderFromII.jsx'
+import AdaptivText from './components/AdaptivText/AdaptivText.jsx'
 
 function App() {
   return (
     <>
-    < ModuleCard/>
+    < AdaptivText />
+    {/* < SliderFromII /> */}
+    {/* < ModuleCard/> */}
     {/* < FlexCard /> */}
     {/* < FlexPosition /> */}
     {/* < PseudoElement /> */}

@@ -1,0 +1,75 @@
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 20%;
+  transition: transform 0.5s ease-in-out, scale 0.5s ease;
+  opacity: 0.5; /* Начальная непрозрачность */
+}
+
+.slide.active {
+  transform: scale(1.1); /* Увеличение активного слайда */
+  opacity: 1; /* Полная непрозрачность активного слайда */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: blue;
+}
+@media (max-width: 768px) {
+  .slider {
+      padding: 10px;
+  }
+
+  button {
+      padding: 8px;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+}

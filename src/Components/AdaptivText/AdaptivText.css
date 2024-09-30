@@ -1,0 +1,36 @@
+body {
+width: 100%;
+min-height: 100vw;
+display: flex;
+flex-direction: column;
+gap: 5rem;
+background-color: #020202;
+color: azure;
+}
+.adaptive {
+  color: azure;
+  text-align: center;
+}
+.adaptive__title {
+  font-size: calc(26px + (100 - 26) * (100vw - 300px) / (1600 - 300));
+  
+}
+.adaptive__text {
+  font-size: calc(12px + (30 - 12) * (100vw - 300px) / (1600 - 300));
+  text-align: justify;
+  padding: 3%;
+  max-width: 80rem;
+}
+
+/* синтаксис
+font-size: calc([minimum size] + ([maximum size]) * ((100vw - [minimum viewport size]) / ([maximum viewport size] - [minimum viewport size])));
+
+minimum size - минимальный размер шрифта, (меньше которого уже очень мелько);
+maximum size - максимальный размер шрифта;
+100vw - 100% ширина области просмотра;
+minimum viewport size - минимальная ширина области просмотра;
+maximum viewport size - максимальная ширина области просмотра;
+
+Например нам нужно, чтобы при максимальной ширине экрана  - 1600px, шрифт был 100px, а при минимальной (300px) -  30px
+font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+*/
