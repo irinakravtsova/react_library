@@ -1,0 +1,34 @@
+.iconreact__list {
+
+} 
+
+.iconreact__list li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.1);
+  transition: background-color 0.3s ;
+  cursor: pointer;
+}
+.iconreact__icon {
+color: gray;
+font-size: 40px;
+transition: color 0.3s;
+}
+.iconreact__list span {
+margin-left: 10px;
+font-size: 18px;
+color: black;
+transition: color 0.3s;
+}
+.iconreact__list li:hover {
+  background-color: rgba(25, 218, 22, 0.1);
+}
+.iconreact__list li:hover .iconreact__icon {
+  color: green;
+}
+.iconreact__list span:hover {
+  color: green;
+}
+

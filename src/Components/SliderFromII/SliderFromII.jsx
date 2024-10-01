@@ -53,21 +53,21 @@ function SliderFromII(props) {
 
   return (
     <div className="slider">
-    <h2>Мой вклад</h2>
+    <h2 className='slider__title'>Мой вклад</h2>
     <div className="slides">
         {slides.map((slide, index) => (
             <div
                 key={slide.id}
                 className={`slide ${index === currentSlide ? 'active' : ''}`}
             >
-                <img src={slide.img} alt={slide.title} />
-                <p>{slide.text}</p>
-                <a href={slide.link}>Узнать больше</a>
+                <img className='slider__img' src={slide.img} alt={slide.title} />
+                <p className='slider__text'>{slide.text}</p>
+                <a className='slider__link' href={slide.link}>Узнать больше</a>
             </div>
         ))}
     </div>
-    <button className="prev" onClick={prevSlide}>&#10094;</button>
-    <button className="next" onClick={nextSlide}>&#10095;</button>
+    <button className="slider__btn prev" onClick={prevSlide}>&#10094;</button>
+    <button className="slider__btn next" onClick={nextSlide}>&#10095;</button>
 </div>
 );
 };

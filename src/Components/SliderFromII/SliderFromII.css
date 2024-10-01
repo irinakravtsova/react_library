@@ -21,7 +21,7 @@
   opacity: 1; /* Полная непрозрачность активного слайда */
 }
 
-button {
+.slider__btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -41,16 +41,16 @@ button {
   right: 10px;
 }
 
-img {
+.slider__img {
   width: 100%;
   height: auto;
 }
 
-p {
+.slider__text {
   margin: 10px 0;
 }
 
-a {
+.slider__link {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
@@ -61,15 +61,15 @@ a {
       padding: 10px;
   }
 
-  button {
+  .slider__btn {
       padding: 8px;
   }
 
-  h2 {
+  .slider__title {
       font-size: 1.5em;
   }
 
-  p {
+  .slider__text {
       font-size: 0.9em;
   }
 }

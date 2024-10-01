@@ -21,10 +21,13 @@ import FlexCard from './components/FlexCard/FlexCard.jsx'
 import ModuleCard from './components/ModuleCard/ModuleCard.jsx'
 import SliderFromII from './components/SliderFromII/SliderFromII.jsx'
 import AdaptivText from './components/AdaptivText/AdaptivText.jsx'
+import IconsReact from './components/IconsReact/IconsReact.jsx'
+import Section from './components/Section/Section.jsx'
 
 function App() {
   return (
     <>
+    {/* < IconsReact /> */}
     {/* < AdaptivText /> */}
     {/* < SliderFromII /> */}
     {/* < ModuleCard/> */}
@@ -33,6 +36,7 @@ function App() {
     {/* < PseudoElement /> */}
    
      < Header /> 
+     < Section />
      {/* < Main />
      < Footer /> */}
 {/* 

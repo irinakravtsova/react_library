@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import './Header.css'
 import logo from '../../assets/logo.png'
 import burger from '../../assets/Icon/burger.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { IoIosMenu } from "react-icons/io";
+
 
 import Menu from '../Menu/Menu';
 
@@ -21,16 +21,14 @@ function Header(props) {
                   />
                 <span> Ирина Кравцова</span>  
           </a>
-          < Menu
-          cls = 'header__menu'
-          clsList = 'header__menu-list' />
-
-        <FontAwesomeIcon icon={faCoctail} />
-
-          <div id='menu'>
-            {/* <img src={burger} alt="" /> */}
-            <i className="fa fa-bars" aria-hidden="true"></i>
+          <div className="" id="header__burger">
+            < IoIosMenu className='header__burger-icon' /> 
           </div>
+          
+          < Menu
+          cls = 'header__navbar'
+          clsList = 'header__navbar-list' />
+
 
 
         </div>

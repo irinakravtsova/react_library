@@ -42,13 +42,15 @@
 
 /* menu */
 
-.header i {
-  font-size: 100px;
+.header__burger-icon {
+  font-size: var(--medium-fz);
   color: white;
+  cursor: pointer;
+  display: none;
 }
 
-@media (max-width: 740px) {  
-  .header__container {
+@media (max-width: 794px) {  
+  /* .header__container {
     display: block;
   }
   .header__logo {
@@ -62,6 +64,34 @@
   }
   .header__menu-list {    
     width: fit-content;
+  } */
+  .header__burger-icon {  
+    display: block;
   }
+  .header__navbar {
+    position: fixed;
+    left: 0;
+    top: -120px;
+    width: 100%;
+    background-color: white;
+    display: none;
+  }
+  .header__navbar:active {
+    top: 0.2rem;
+  }
+  .header__navbar-list {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .header__navbar-list li {
+    width: 100%;
+    text-align: center;
+  }
+  .header__navbar-list li a {
+    display: block;
+    background-color: var( --base-color);
+    padding: 1rem;
+  }
+  
 
    }
